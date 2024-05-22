@@ -185,6 +185,7 @@ body {
         background-color: #ccc;
         background-image: url("edgar\ portfol2.png");
         background-size: cover;
+        font-size: 1em;
     }
     .container {
         margin: 20px auto;
