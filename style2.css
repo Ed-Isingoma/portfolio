@@ -1,8 +1,8 @@
 body {
     font-family: sans-serif; 
+    background-color: #ccc;
     background-image: url("edgar\ portfol1.png");
     background-size: cover;
-    background-color: #ccc;
 }
 
 * {
@@ -177,6 +177,7 @@ body {
 
 @media (max-width: 768px) {
     body {
+        background-color: #ccc;
         background-image: url("edgar\ portfol2.png");
         background-size: cover;
     }
