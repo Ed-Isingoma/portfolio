@@ -1,9 +1,10 @@
 let currentClassName = "intro"
 function doFlip(ev) {
-    if (ev.target.className == currentClassName) {
+    if (getComputedStyle(ev.target.parentElement).float == 'none') {
+        return mobileFlip(ev)
+    } else if (ev.target.className == currentClassName) {
         return
     } else {
-        //some lines here dont have effect on screen during mobile view
         if (currentClassName == 'intro') {
             document.querySelector('.introBox .intro').classList.remove('shimmering')
         } else {
@@ -19,11 +20,15 @@ function doFlip(ev) {
         currentClassName = ev.target.classList[0]
     }
 }
-function showIntros(){
-    document.querySelector('.buttonsLinks').classList.toggle('showing')
-}
 
-function introsFlip(ev){
-    document.querySelector('.buttonsLinks').classList.remove('showing')
-    doFlip(ev)
+function mobileFlip(ev) {
+    if (ev.target.nextElementSibling.id == ev.target.classList[0]) {
+        ev.target.nextElementSibling.remove()
+        return
+    } else {
+        const targetEl = document.querySelector(`.hidings .${ev.target.classList[0]}`).cloneNode(true)
+        targetEl.style.display = 'block'
+        targetEl.id = targetEl.classList[0]
+        ev.target.insertAdjacentElement("afterend",targetEl)
+    }
 }

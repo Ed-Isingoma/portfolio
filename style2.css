@@ -1,6 +1,7 @@
 body {
     font-family: 'Roboto', sans-serif;
     font-size: 1.1em;
+    line-height: 1.6;
     background-color: #ccc;
     background-image: url("edgar\ portfol1.png");
     background-size: cover;
@@ -81,40 +82,11 @@ body {
     width: 30px;
     vertical-align: middle;
 }
-.intros {
-    margin: 0;
-    padding: 10px;
-    background: none;
-    border: none;
-    display: none;
-    border: none;
-}
-.buttonsLinks {
-    display: none;
-    background-color: rgba(255, 255, 255, 0.5);
-    padding: 6px;
-}
 .showing {
     display: block;
     width: 50%;
     border-radius: 5px;
 }
-.buttonsLinks > * {
-    display: block;
-    border-radius: 5px;
-    margin-bottom: 2px;
-    width: 100%;
-    font-size: 1.2em;
-    background: linear-gradient(-45deg, #e1ff9b88, #ff950088, #ee775288, #e73c7e88);
-    background-size: 250%;
-    background-position: left;
-    padding: 5px;
-}
-
-.buttonsLinks .intro {
-    margin-bottom: 15px;
-}
-
 .hidings > div:not(:first-child) {
     display: none;
 }
@@ -122,12 +94,12 @@ body {
 .hidings {
     width: 75%;
     min-height: 275px;
-    font-size: 1.2em;
+    font-size: 1.1em;
     line-height: 1.6;
     padding-right: 20px;
 }
 
-.hidings img {
+.hidings img, .hidingsTitles img {
     display: block;
     width: 100%;
 }
@@ -136,10 +108,10 @@ body {
     width: 24%;
 }
 
-.hidingsTitles > * {
+.hidingsTitles > button, .titlesTitle {
     display: block;
     width: 100%;
-    font-size: 1.2em;
+    font-size: 1.1em;
     cursor: pointer;
     background: linear-gradient(-45deg, #e1ff9b88, #ff950088, #ee775288, #e73c7e88);
     background-size: 250%;
@@ -155,7 +127,7 @@ body {
     font-weight: bold;
     color: white;
     margin-bottom: 15px;
-    font-size: 1.5em;
+    font-size: 1.2em;
 }
 
 .outro {
@@ -164,11 +136,11 @@ body {
 
 .hidings .intro span {
     font-weight: bold;
-    font-size: 1.3em;
+    font-size: 1.2em;
     color: green;
 }
 
-.shimmering, .introBox .shimmering {
+.hidingsTitles .shimmering, .introBox .shimmering {
     background: linear-gradient(-45deg, #e1ff9b, #ff9500, #ee7752, #e73c7e);
     background-size: 250%;
     background-position: left;
@@ -198,16 +170,19 @@ body {
         padding: 3px;
         margin: 3px;
     }
-    .hidings {
+    .hidings, .hidingsTitles {
         width: 100%;
     }
-    .hidingsTitles, .introBox > .intro {
+    .flips >div {
+        float: none;
+    }
+    .introBox {
         display: none;
     }
-    .intros {
-        display: block;
-    }
-    .introBox img {
-        width: 40px;
+}
+
+@media (min-width: 769px) {
+    #outro, #prm, #merchhub, #sleekrep {
+        display: none !important;
     }
 }
