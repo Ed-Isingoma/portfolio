@@ -3,12 +3,20 @@ function doFlip(ev) {
     if (ev.target.className == currentClassName) {
         return
     } else {
-        //lights in button, if hidings div is on display
-        //lights on in hidings
+        //some lines here dont have effect on screen during mobile view
+        if (currentClassName == 'intro') {
+            document.querySelector('.introBox .intro').classList.remove('shimmering')
+        } else {
+            document.querySelector(`.hidingsTitles .${currentClassName}`).classList.remove('shimmering')
+        }
+        if (ev.target.className == 'intro') {
+            document.querySelector('.introBox .intro').classList.add('shimmering')
+        } else {
+            document.querySelector(`.hidingsTitles .${ev.target.className}`).classList.add('shimmering')
+        }
         document.querySelector(`.hidings .${currentClassName}`).style.display = 'none'
-        document.querySelector(`.hidings .${ev.target.className}`).style.display = 'block'
-        currentClassName = ev.target.className
-        //lights off in hidings
+        document.querySelector(`.hidings .${ev.target.classList[0]}`).style.display = 'block'
+        currentClassName = ev.target.classList[0]
     }
 }
 function showIntros(){
