@@ -1,0 +1,203 @@
+body {
+    font-family: sans-serif; 
+    background-image: url("edgar\ portfol1.png");
+    background-size: cover;
+    background-color: #ccc;
+}
+
+* {
+    box-sizing: border-box;
+    word-break: break-word;
+}
+
+.container {
+    margin: 45px auto;
+    width: 70%;
+    padding: 15px;
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius: 10px;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+.tops, .flips {
+    width: 100%;
+    padding: 10px;
+    overflow: hidden;
+}
+.tops {
+    position: -webkit-sticky; /* For Safari */
+    position: sticky;
+    border-radius: 6px;
+    background-color: rgba(255, 255, 255, 0.4);
+    top: 0;
+}
+
+.tops > div, .flips > div {
+    float: left;
+}
+
+.floatEnd {
+    clear: both;
+}
+
+.tops .introBox {
+    width: 14%;
+    height: 45px;
+}
+
+.introBox .intro {
+    width: 100%;
+    height: 100%;
+    font-size: 1.2em;
+    background-color: rgb(49, 133, 49);
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.introBox .intro:hover {
+    background-color: green;
+}
+
+.contacts {
+    text-align: center;
+    width: 84%;
+    padding: 10px 0;
+}
+
+.contacts a {
+    color: #333;
+    text-decoration: none;
+    padding: 6px;
+    margin: 0 10px;
+}
+
+.contacts a:hover {
+    background-color: #333;
+    color: white;
+    border-radius: 5px;
+}
+.contacts a img {
+    width: 30px;
+    vertical-align: middle;
+}
+.intros {
+    display: none;
+    border: none;
+    padding: 10px;
+}
+.buttonsLinks {
+    display: none;
+    background-color: rgba(255, 255, 255, 0.3);
+    padding: 6px;
+}
+.showing {
+    display: block;
+    width: 50%;
+}
+.buttonsLinks > * {
+    display: block;
+    width: 100%;
+    font-size: 1.2em;
+    padding: 5px;
+    border: 2px solid #ddd;
+}
+.buttonsLinks > *:hover {
+    background-color: #ddd;
+}
+.buttonsLinks .intro {
+    margin-bottom: 15px;
+}
+
+.hidings > div:not(:first-child) {
+    display: none;
+}
+
+.hidings {
+    width: 75%;
+    min-height: 275px;
+    font-size: 1.2em;
+    line-height: 1.6;
+    padding-right: 20px;
+}
+
+.hidings img {
+    display: block;
+    width: 100%;
+}
+
+.hidingsTitles {
+    width: 24%;
+}
+
+.hidingsTitles > * {
+    display: block;
+    width: 100%;
+    font-size: 1.2em;
+    cursor: pointer;
+    background-color: #f4f4f4;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    transition: background-color 0.3s;
+}
+
+.hidingsTitles > *:hover {
+    background-color: #ddd;
+}
+
+.titlesTitle {
+    background-color: #dddddd9d;
+    text-align: center;
+    text-decoration: underline;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 15px;
+    font-size: 1.5em;
+}
+
+.outro {
+    margin-top: 15px;
+}
+
+.hidings .intro span {
+    font-weight: bold;
+    font-size: 1.3em;
+    color: green;
+}
+
+@media (max-width: 992px) {
+    .container {
+        margin: 30px auto;
+        width: 80%;
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        background-image: url("edgar\ portfol2.png");
+        background-size: cover;
+    }
+    .container {
+        margin: 20px auto;
+        width: 90%;
+    }
+    .contacts a {
+        padding: 3px;
+        margin: 3px;
+    }
+    .hidings {
+        width: 100%;
+    }
+    .hidingsTitles, .introBox > .intro {
+        display: none;
+    }
+    .intros {
+        display: block;
+    }
+    .introBox img {
+        width: 40px;
+    }
+}

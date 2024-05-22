@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edgar Isingoma</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="tops">
+            <div class="introBox">
+                <button class="intro" onclick="doFlip(event)">intro</button>
+                <button class="intros" onclick="showIntros()">
+                <img src="hamburger.png"></button>
+            </div>
+            <div class="contacts">
+                <a href="mailto:eddiisingoma@gmail.com"><img src="gmail.png"></a><a href="https://github.com/Ed-Isingoma"><img src="github.png"></a><a href="https://gitlab.com/eddiisingoma"><img src="gitlab.png"></a><a href="https://www.linkedin.com/in/edgar-ntonde-isingoma-994280168"><img src="linkedin.png"></a>
+            </div>
+            <div class="floatEnd"></div>
+            <div class="buttonsLinks">
+                <button class="intro" onclick="introsFlip(event)">intro</button>
+                <button onclick="introsFlip(event)" class="sleekrep">sleek-reports</button>
+                <button onclick="introsFlip(event)" class="merchhub">MerchantHub</button>
+                <button onclick="introsFlip(event)" class="prm">P.R.M</button>
+                <button onclick="introsFlip(event)" class="outro">Outro</button>
+            </div>
+        </div>
+        <div class="flips">
+            <div class="hidings">
+                <div class="intro">
+                    My name is <span>Ntonde Edgar Isingoma</span>, a software developer with about three years'
+                    experience building projects. <br>
+                    I am a backend developer 😎️ because my sentimental inclinations say so. Also because my most recent
+                    programming certification is Database Engineering offered by Meta, but I have also written in
+                    Javascript (of course), React, ExpressJS, ElectronJS, Python, Django, MySQL (which inspires my
+                    identity), and behold! In the next section are some of my most presentable works of code (...I mean,
+                    my github has a
+                    number of forked repos that I didnt even touch after forking).
+                </div>
+                <div class="sleekrep">
+                    Sleekreports is a small one-page website that makes report cards for a particular client school from
+                    data provided via a Ms Excel spreadsheet. It was built with HTML, CSS & Javascript and relies on a
+                    backend which was built with ExpressJS. <br>
+                    <a href="https://github.com/Ed-Isingoma/sleekreports-web">Here is the link to the site's code</a>, and below is a sample of what the finished report looks like.
+                    <img src="sleekrep sample.png">
+                </div>
+                <div class="merchhub">
+                    MerchantHub was a class project e-commerce website that I contributed to by writing its backend code
+                    with Django. And this is what the site looks like on frontend.The associated backend code I'm
+                    talking about is <a href="https://gitlab.com/thebaddest/merchanthub">here on gitlab</a>.
+                    <img src="merchhub sample.png">
+                </div>
+                <div class="prm">
+                    Now there's this, which was my first (almost) complete app called Personal Records Manager- PRM.
+                    <br>
+                    Oh, the joy that came with finally having an app to my name! So behold, a 60-MB app that only
+                    receives text information in the format of a Police officer's diary and stores them. I didn't do any
+                    compressing or "tree-shaking" whatsoever to minimise its file size, and then I soon left the project unperfected (though good enough) to move onto different work.
+                    <img src="prm sample.png">
+                    <br>
+                    This app was built with ElectronJS and also MySQL in an updated version for data storage. If you
+                    want to download the whole thing to see, <a
+                        href="https://github.com/Ed-Isingoma/prm/releases/tag/1.0.1">knock yourself out</a>.
+                </div>
+                <div class="outro">
+                    I'm still learning and I'm eager to. I've explored NestJS with Prisma, Java, Flutter and a little
+                    more. Im interested in venturing into mobile app development and this is likely the next app I'll
+                    build. Or I'll just stay basking in the cool backend development.<br>
+                    But never know-- a slight refreshing of this page might pop a new item onto that projects list 😅️.
+                    Be expectant anytime.<br>
+                    Thank you for your attention. And as you saw, the big links are at the top of the screen. Hoping to
+                    hear from you.
+                </div>
+            </div>
+            <div class="hidingsTitles">
+                <div class="titlesTitle">
+                    Projects
+                </div>
+                <button onclick="doFlip(event)" class="sleekrep">sleek-reports</button>
+                <button onclick="doFlip(event)" class="merchhub">MerchantHub</button>
+                <button onclick="doFlip(event)" class="prm">P.R.M</button>
+                <button onclick="doFlip(event)" class="outro">Outro</button>
+            </div>
+            <div class="floatEnd"></div>
+        </div>
+    </div>
+    <script src="scr1.js"></script>
+</body>
+
+</html>
