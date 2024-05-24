@@ -13,8 +13,8 @@ body {
 }
 
 .container {
-    margin: 45px auto;
-    width: 70%;
+    margin: 35px auto;
+    width: 75%;
     padding: 15px;
     background-color: rgba(255, 255, 255, 0.6);
     border-radius: 10px;
@@ -93,7 +93,6 @@ body {
 
 .hidings {
     width: 75%;
-    min-height: 275px;
     font-size: 1.1em;
     line-height: 1.6;
     padding-right: 20px;
@@ -146,12 +145,6 @@ body {
     background-position: left;
 }
 
-@media (max-width: 992px) {
-    .container {
-        margin: 30px auto;
-        width: 80%;
-    }
-}
 @media (max-width: 768px) {
     body {
         background-color: #ccc;
@@ -162,6 +155,8 @@ body {
     .container {
         margin: 20px auto;
         width: 90%;
+        overflow-y: scroll;
+        max-height: calc(100vh - 50px);
     }
     .tops {
         background: linear-gradient(-45deg, #e1ff9b88, #ff950088, #ee775288, #e73c7e88);
@@ -182,7 +177,11 @@ body {
 }
 
 @media (min-width: 769px) {
-    #outro, #prm, #merchhub, #sleekrep {
+    #outro, #prm, #merchhub, #sleekrep, #mescl {
         display: none !important;
+    }
+    .hidings {
+        overflow-y: scroll;
+        max-height: calc(100vh - 192px);
     }
 }
